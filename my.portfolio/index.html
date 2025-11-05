@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <button class="toggle-btn">Show Details</button>
+      <div class="details hidden">
+        <p>This project showcases my personal portfolio built with HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Task Organizer App</h3>
+      <button class="toggle-btn">Show Details</button>
+      <div class="details hidden">
+        <p>A simple JavaScript app to add, view, and remove daily tasks efficiently.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Paint Job Estimator</h3>
+      <button class="toggle-btn">Show Details</button>
+      <div class="details hidden">
+        <p>A Java program that calculates paint cost, labor hours, and total job estimates.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <h3 id="typing"></h3>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
